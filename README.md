@@ -1,9 +1,9 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/KU8eozPI)
-# Název mého web-projektu je STUDY METHODS
+# STUDY METHODS
 Práce se zabývá vytvořením webových stránek..
 
 Nezapomenu upravit odkazy a "aktivovat" GitHub Pages... 
-[Webová stránka s ukázkovou implemetací](https://github.com/pslib-cz/2022-l3-web-site-annastruncova.git)
+[Webová stránka s ukázkovou implemetací](https://pslib-cz.github.io/2022-l3-web-site-annastruncova/)
 
 [Návrh webové stránky ve Figmě](https://www.figma.com/file/BMvXhJGtUN9jH28cT87td1/Untitled?type=design&node-id=0%3A1&t=jiRcaKKCfuo6Dzau-1)
 
