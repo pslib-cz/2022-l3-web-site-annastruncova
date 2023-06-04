@@ -1,0 +1,35 @@
+:root{
+    --primary: #FF00A7;
+    --dark: #000000;
+    --light: #FFFFFF;
+}
+@font-face {
+    font-family: GoboldRegular;
+    src: url(../fonty/Gobold/Gobold\ Bold.otf) format('opentype');
+}
+@font-face {
+    font-family: Enriqueta;
+    src: url(../fonty/Enriqueta/Enriqueta-Regular.ttf) format('truetype');
+}
+@font-face{
+    font-family: GoboldCuts;
+    src: url(../fonty/Gobold/Gobold\ CUTS.otf) format('opentype');
+}
+
+
+
+html {
+    font-family: Enriqueta;
+    font-size: 1rem;
+}
+body {
+    margin: 0;
+    background-color: var(--dark);
+}
+a{
+    text-decoration: none;
+}
+@media screen and (min-width: 990px) {
+    
+    
+}
