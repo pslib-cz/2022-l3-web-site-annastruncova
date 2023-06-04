@@ -83,6 +83,11 @@
 
     
 /*HEADER*/
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
 .hamburger-row {
     padding: 1em;
     background-color:var(--dark);

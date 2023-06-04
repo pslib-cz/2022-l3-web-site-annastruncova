@@ -21,14 +21,56 @@
 html {
     font-family: Enriqueta;
     font-size: 1rem;
+    color: var(--light);
 }
 body {
     margin: 0;
     background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
 }
-a{
-    text-decoration: none;
+main{
+    margin-top: 4rem;
 }
+a{text-decoration: none;}
+
+h1, h2, h3, h4{font-family: GoboldRegular;}
+h2{font-size: 22px}
+.hightlight{
+    color: var(--primary);
+}
+/*Feynman Technique*/
+.main__feynman{
+    background: url(../img/img/Feynman-background-2.png);
+    padding: 1rem;
+
+}
+.header__feynman{
+    background: url(../img/img/Feynman-background.png);
+    background-position: center 45%;
+    background-repeat: no-repeat;
+    text-align: end;
+    padding: 1rem;
+    margin: 0 -1rem;
+}
+.img__feynman{
+    display: inline-block;
+    margin: 0 auto;
+}
+.section__Feynman{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
 @media screen and (min-width: 990px) {
     
     
