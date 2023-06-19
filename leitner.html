@@ -14,25 +14,27 @@
 </head>
 <body>
     <header>
-        <div class="hamburger-row">
-            <a href="./index.html" class=""><img class="mobil-logo" src="./img/Logo.svg" alt="study methods"></a>
-            <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-        </div>
-        <nav class="hamburger-nav hamburger-zone">
-            <a href="./index.html" class=""><img class="desktop-logo" src="./img/Logo.svg" alt="study methods"></a>
-            <menu class="hamburger-list">
-                <li  onclick="window.location.href='index.html'" style="cursor: pointer;">Úvod</li>
-                <li onclick="window.location.href='pomodoro.html'" style="cursor: pointer;">Pomodoro Technique</li>
-                <li onclick="window.location.href='feynman.html'" style="cursor: pointer;">Feynman technique</li>
-                <li class="active" onclick="window.location.href='leitner.html'" style="cursor: pointer;" >Leitner system</li>
-                <li onclick="window.location.href='ostatni.html'" style="cursor: pointer;">Ostatní</li>
-                <li onclick="window.location.href='kontakt.html'" style="cursor: pointer;">Kontakt</li>
-            </menu>
-        </nav>
+        <section class="header__top">
+            <div class="hamburger-row">
+                <a href="./index.html" class=""><img class="mobil-logo" src="./img/Logo.svg" alt="study methods"></a>
+                <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <nav class="hamburger-nav hamburger-zone">
+                <a href="./index.html" class=""><img class="desktop-logo" src="./img/Logo.svg" alt="study methods"></a>
+                <menu class="hamburger-list">
+                    <li onclick="window.location.href='index.html'" style="cursor: pointer;">Úvod</li>
+                    <li onclick="window.location.href='pomodoro.html'" style="cursor: pointer;">Pomodoro Technique</li>
+                    <li onclick="window.location.href='feynman.html'" style="cursor: pointer;">Feynman technique</li>
+                    <li class="active" onclick="window.location.href='leitner.html'" style="cursor: pointer;">Leitner system</li>
+                    <li onclick="window.location.href='ostatni.html'" style="cursor: pointer;">Ostatní</li>
+                    <li onclick="window.location.href='kontakt.html'" style="cursor: pointer;">Kontakt</li>
+                </menu>
+            </nav>
+        </section>
     </header>
     <main class="main__leitner">
         <h2 class="header__leitner">Leitner System</h2>
@@ -74,16 +76,16 @@
     <footer>
         <nav>
             <menu class="footer__cards">
-                <figure class="card-item item-1">
-                    <div class="face"><p>@_.handele</p></div>
+                <figure onclick="window.location.href='https://www.instagram.com/_.handele/'" class="card-item item-1">
+                    <div class="face"><a href="#">@_.handele</a></div>
                     <div class="back"><img src="./img/icon/icony=instagram.svg"></div>
                 </figure>
                 <div class="background__img-1 card-item item-2"></div>
                 <div class="card-item background-1 item-3" onclick="window.location.href='leitner.html'" style="cursor: pointer;"><p>Leitner system</p></div>
                 <div class="background card-item item-4" ></div>
                 <div class="card-item background-2 item-5" onclick="window.location.href='pomodoro.html'" style="cursor: pointer;"><p>Pomodoro technique</p></div>
-                <figure class="card-item item-6">
-                    <div class="face"><p>Anna Struncová</p></div>
+                <figure class="card-item item-6" onclick="window.location.href='#'">
+                    <div class="face"><a href="#">Anna Struncová</a></div>
                     <div class="back"><img src="./img/icon/icony=facebook.svg"></div>
                 </figure>
                 <div class="card-item background-3 item-7" onclick="window.location.href='ostatni.html'" style="cursor: pointer;"><p>Ostatní</p></div>
@@ -91,18 +93,18 @@
                 <div class="background__img-3 card-item item-9"></div>
                 <div class="background__img-4 card-item item-10"></div>
                 <div class="card-item background-4 item-11" onclick="window.location.href='feynman.html'" style="cursor: pointer;"><p>Feynman Technique</p></div>
-                <figure class="card-item item-12">
-                    <div class="face"><p>+420 111 222 444</p></div>
+                <figure class="card-item item-12" onclick="window.location.href='tel:+420111222444'">
+                    <div class="face"><a href="tel:+420111222444">+420 111 222 444</a></div>
                     <div class="back"><img src="./img/icon/icony=phone.svg"></div>
                 </figure>
                 <div class="card-item background-5 item-13"  onclick="window.location.href='index.html'" style="cursor: pointer;"><p>Study methods</p></div>
-                <figure class="card-item item-14">
-                    <div class="face"><p>anna.struncova. 020@pslib.cz</p></div>
+                <figure class="card-item item-14" onclick="window.location.href='mailto:anna.struncova.020@pslib.cz'">
+                    <div class="face"><a href="mailto:anna.struncova.020@pslib.cz">anna.struncova. 020@pslib.cz</a></div>
                     <div class="back"><img src="./img/icon/icony=mail.svg"></div>
                 </figure>
                 <div class="background__img-5 card-item item-15"></div>
-                <figure class="card-item item-16">
-                    <div class="face"><p>@annastruncova</p></div>
+                <figure class="card-item item-16" onclick="window.location.href='https://pin.it/1Ix8CmO'">
+                    <div class="face"><a href="https://pin.it/1Ix8CmO">@annastruncova</a></div>
                     <div class="back"><img src="./img/icon/icony=pinterest.svg"></div>
                 </figure>
                 <div class="background__img-6 card-item item-17"></div>

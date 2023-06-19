@@ -52,6 +52,7 @@ figure{
     vertical-align: middle;
     text-align: center;
     color: var(--primary);
+    background-color: var(--dark);
 }
 .back{
     overflow: hidden;

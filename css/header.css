@@ -83,10 +83,13 @@
 
     
 /*HEADER*/
-header{
+.header__top{
     position: fixed;
-    width: 100%;
-    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10vh;
+    z-index: 2;
 }
 .hamburger-row {
     padding: 1em;

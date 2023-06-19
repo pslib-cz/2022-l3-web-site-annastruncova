@@ -39,31 +39,33 @@
 </head>
 <body class="body__uvod">
     <header>
-        <div class="hamburger-row">
-            <a href="./index.html" class=""><img class="mobil-logo" src="./img/Logo.svg" alt="study methods"></a>
-            <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-        </div>
-        <nav class="hamburger-nav hamburger-zone">
-            <a href="./index.html" class=""><img class="desktop-logo" src="./img/Logo.svg" alt="study methods"></a>
-            <menu class="hamburger-list">
-                <li class="active" onclick="window.location.href='index.html'" style="cursor: pointer;">Úvod</li>
-                <li onclick="window.location.href='pomodoro.html'" style="cursor: pointer;">Pomodoro Technique</li>
-                <li onclick="window.location.href='feynman.html'" style="cursor: pointer;">Feynman technique</li>
-                <li onclick="window.location.href='leitner.html'" style="cursor: pointer;">Leitner system</li>
-                <li onclick="window.location.href='ostatni.html'" style="cursor: pointer;">Ostatní</li>
-                <li onclick="window.location.href='kontakt.html'" style="cursor: pointer;">Kontakt</li>
-            </menu>
-        </nav>
+        <section class="header__top">
+            <div class="hamburger-row">
+                <a href="./index.html" class=""><img class="mobil-logo" src="./img/Logo.svg" alt="study methods"></a>
+                <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <nav class="hamburger-nav hamburger-zone">
+                <a href="./index.html" class=""><img class="desktop-logo" src="./img/Logo.svg" alt="study methods"></a>
+                <menu class="hamburger-list">
+                    <li class="active" onclick="window.location.href='index.html'" style="cursor: pointer;">Úvod</li>
+                    <li onclick="window.location.href='pomodoro.html'" style="cursor: pointer;">Pomodoro Technique</li>
+                    <li onclick="window.location.href='feynman.html'" style="cursor: pointer;">Feynman technique</li>
+                    <li onclick="window.location.href='leitner.html'" style="cursor: pointer;">Leitner system</li>
+                    <li onclick="window.location.href='ostatni.html'" style="cursor: pointer;">Ostatní</li>
+                    <li onclick="window.location.href='kontakt.html'" style="cursor: pointer;">Kontakt</li>
+                </menu>
+            </nav>
+        </section>
     </header>
     <main>
-        <section class="uvod__caption">
-            <h1>Samostudium</h1>
+        <section class="caption__card">
+            <img class="text__img" src="./img/img/uvod-samostudium.png" alt="samostudium">
             <div class="caption__text">
-                <img class="text__img" src="./img/img/uvod-samostudium.png" alt="samostudium">
+                <h1>Samostudium</h1>
                 <p>
                     Existuje mnoho různých metod učení, které mohou pomoci studentům zlepšit své učební výsledky a efektivitu. Mezi ně patří například Pomodoro technika, Feynman Technique a další.
                     Každá z těchto metod se zaměřuje na jiný aspekt učení, ale všechny mají společný cíl – pomoci studentům lépe se učit a zapamatovat si informace. Tyto metody lze použít nejen v akademickém prostředí, ale také v podnikání, sportu nebo osobním rozvoji.
@@ -84,7 +86,7 @@
                                     <div class="slider-view__description">
                                         <span>Pomodor technique</span>
                                         <p class="description__text">Pomodoro technika je metoda časového řízení práce. Pracovní doba je rozdělena na krátké úseky, nazývané "pomodoros". Každý pomodoro trvá 25 minut. Během každého pomodora se zaměřujete pouze na jednu úlohu. Po každém pomodoru si uděláte krátkou přestávku.</p>
-                                        <button class="read-more">Read more</button>    
+                                        <button onclick="window.location.href='pomodoro.html'" style="cursor: pointer;" class="read-more">Read more</button>    
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +95,7 @@
                                     <div class="slider-view__description">
                                         <span>Feynman Technique</span>
                                         <p class="description__text">Feynman Technique je způsob učení se nových konceptů. Zahrnuje 4 kroky: zvolení tématu, vysvětlení tématu vlastními slovy, odhalení nedostatků v pochopení a zopakování procesu. Tento postup umožňuje efektivnější učení a zapamatování nových informací.</p>
-                                        <button class="read-more">Read more</button>    
+                                        <button onclick="window.location.href='feynman.html'" style="cursor: pointer;" class="read-more">Read more</button>    
                                     </div>
                                 </div>
                             </div>
@@ -102,7 +104,7 @@
                                     <div class="slider-view__description">
                                         <span>Leitner system</span>
                                         <p class="description__text">Leitner System je metoda opakování slovíček nebo pojmů. Slovník je rozdělen do několika krabic podle obtížnosti. Slova jsou učena postupně a podle úspěšnosti se přesouvají mezi krabicemi. Čím lépe si student pamatuje slova, tím méně jsou opakována. Tato metoda usnadňuje učení a zapamatování slovní zásoby.</p>
-                                        <button class="read-more">Read more</button>    
+                                        <button onclick="window.location.href='leitner.html'" style="cursor: pointer;" class="read-more">Read more</button>    
                                     </div>
                                 </div>
                             </div>
@@ -113,7 +115,7 @@
                                         <p class="description__text">Reward-Based Learning odměňuje správné chování. Studenti jsou motivováni k učení pomocí pozitivní zpětné vazby. Metoda vychází z principů behaviorální psychologie.</p>
                                         <span>Blurting</span>
                                         <p class="description__text">Blurting je technika opakování informací pro studenty. Cílem je zlepšit dlouhodobou paměť a soustředění. </p>
-                                        <button class="read-more">Read more</button>    
+                                        <button onclick="window.location.href='kontakt.html'" style="cursor: pointer;" class="read-more">Read more</button>    
                                     </div>
                                 </div>
                             </div>
@@ -134,15 +136,15 @@
     <footer>
         <nav>
             <menu class="footer__cards">
-                <figure class="card-item item-1">
+                <figure onclick="window.location.href='https://www.instagram.com/_.handele/'" class="card-item item-1">
                     <div class="face"><a href="#">@_.handele</a></div>
                     <div class="back"><img src="./img/icon/icony=instagram.svg"></div>
                 </figure>
                 <div class="background__img-1 card-item item-2"></div>
-                <div class="card-item background-1 item-3" onclick="window.location.href='leitner.html'" style="cursor: pointer;"><p>Leitner system</p></div>
+                <div class="card-item background-1 item-3" onclick="window.location.href='leitner.html'" style="cursor: pointer;" ><p>Leitner system</p></div>
                 <div class="background card-item item-4" ></div>
                 <div class="card-item background-2 item-5" onclick="window.location.href='pomodoro.html'" style="cursor: pointer;"><p>Pomodoro technique</p></div>
-                <figure class="card-item item-6">
+                <figure class="card-item item-6" onclick="window.location.href='#'">
                     <div class="face"><a href="#">Anna Struncová</a></div>
                     <div class="back"><img src="./img/icon/icony=facebook.svg"></div>
                 </figure>
@@ -151,17 +153,17 @@
                 <div class="background__img-3 card-item item-9"></div>
                 <div class="background__img-4 card-item item-10"></div>
                 <div class="card-item background-4 item-11" onclick="window.location.href='feynman.html'" style="cursor: pointer;"><p>Feynman Technique</p></div>
-                <figure class="card-item item-12">
+                <figure class="card-item item-12" onclick="window.location.href='tel:+420111222444'">
                     <div class="face"><a href="tel:+420111222444">+420 111 222 444</a></div>
                     <div class="back"><img src="./img/icon/icony=phone.svg"></div>
                 </figure>
                 <div class="card-item background-5 item-13"  onclick="window.location.href='index.html'" style="cursor: pointer;"><p>Study methods</p></div>
-                <figure class="card-item item-14">
+                <figure class="card-item item-14" onclick="window.location.href='mailto:anna.struncova.020@pslib.cz'">
                     <div class="face"><a href="mailto:anna.struncova.020@pslib.cz">anna.struncova. 020@pslib.cz</a></div>
                     <div class="back"><img src="./img/icon/icony=mail.svg"></div>
                 </figure>
                 <div class="background__img-5 card-item item-15"></div>
-                <figure class="card-item item-16">
+                <figure class="card-item item-16" onclick="window.location.href='https://pin.it/1Ix8CmO'">
                     <div class="face"><a href="https://pin.it/1Ix8CmO">@annastruncova</a></div>
                     <div class="back"><img src="./img/icon/icony=pinterest.svg"></div>
                 </figure>

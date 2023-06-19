@@ -17,7 +17,6 @@
 }
 
 
-
 html {
     font-family: Enriqueta;
     font-size: 16px;
@@ -32,6 +31,7 @@ body {
 main{
     margin: 4rem auto 1rem auto;
     max-width: 80%;
+    padding-top: 4rem;
 }
 a{text-decoration: none;}
 
@@ -50,6 +50,13 @@ h2{font-size: 22px}
 
 
 /*ÚVOD*/
+.body__uvod{
+    background: url(../img/img/uvod-background.png);
+    background-repeat: no-repeat;
+    background-color: var(--dark);
+    background-position: center 0%;
+    background-size: 100% auto;
+}
 .main__uvod{
     background: url(../img/img);
     padding: 1rem;
@@ -86,13 +93,15 @@ h2{font-size: 22px}
     background-repeat: no-repeat;
     background-position: center 45%;
 }
-.caption__text{
+.caption__card{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    backdrop-filter: blur(500000px);
+    border: 3px solid var(--light);
+    padding: 1rem;
 }
-
 
 
 
@@ -102,8 +111,6 @@ h2{font-size: 22px}
 /*Feynman Technique*/
 .main__feynman{
     background: url(../img/img/Feynman-background-2.png);
-    padding: 1rem;
-
 }
 .header__feynman{
     background: url(../img/img/Feynman-background.png);
@@ -129,7 +136,10 @@ h2{font-size: 22px}
 
 @media screen and (min-width: 450px) {
     .text__img{
-        max-width: 60%;
+        width: 60%;
+    }
+    .caption__text{
+        width: 80%;
     }
 }
 
@@ -139,17 +149,16 @@ h2{font-size: 22px}
     }
 }
 @media screen and (min-width: 750px) {
-    .caption__text{
+    .caption__card{
         flex-direction: row;
     }
-    .caption__text p{
-        width: 50%;
+    .text__img{
+        width: 40%;
     }
 }
 @media screen and (min-width: 990px) {
-    .caption__text{
+    .caption__card{
         
-        align-items: center
     }
     main{
         max-width: 60%;
