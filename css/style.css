@@ -16,11 +16,14 @@
     src: url(../fonty/Gobold/Gobold\ CUTS.otf) format('opentype');
 }
 
-
+menu{
+    padding: 0;
+}
 html {
     font-family: Enriqueta;
     font-size: 16px;
     color: var(--light);
+    background-color: var(--dark);
 }
 body {
     margin: 0;
@@ -40,11 +43,6 @@ h2{font-size: 22px}
 .hightlight{
     color: var(--primary);
 }
-
-
-
-
-
 
 
 
