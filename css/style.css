@@ -31,6 +31,7 @@ body {
 }
 main{
     margin-top: 4rem;
+    max-width: 60%;
 }
 a{text-decoration: none;}
 
@@ -39,6 +40,41 @@ h2{font-size: 22px}
 .hightlight{
     color: var(--primary);
 }
+
+
+
+
+
+
+
+
+
+/*ÚVOD*/
+.main__uvod{
+    background: url(../img/img);
+    padding: 1rem;
+}
+.read-more {
+    font-family: GoboldRegular;
+    background-color: transparent;
+    border: 1px solid var(--light);
+    color: var(--ligh);
+    padding: 1rem 2rem;
+  }
+  
+  .read-more:hover {
+    background-color: var(--light);
+    color: var(--primary);
+  }
+
+
+
+
+
+
+
+
+
 /*Feynman Technique*/
 .main__feynman{
     background: url(../img/img/Feynman-background-2.png);

@@ -10,7 +10,32 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="./css/slider.css">
     <script src="./JS/hamburger.js"></script>
+    <script src="./JS/slider.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper(".swiper", {
+          loop: true,
+          keyboard: {
+            enabled: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+            bulletElement: "a",
+            bulletClass: "swiper-pagination-bullet dot"
+          }, 
+        });
+  
+        document.querySelector("#next-slide").onclick = () => swiper.slideNext();
+      </script>
 </head>
 <body>
     <header>
@@ -34,8 +59,74 @@
             </menu>
         </nav>
     </header>
-    <main>
+    <main class="main__uvod">
+        <section>
+            <h1>Samostudium</h1>
+            <p>
+                Existuje mnoho různých metod učení, které mohou pomoci studentům zlepšit své učební výsledky a efektivitu. Mezi ně patří například Pomodoro technika, Feynman Technique a další. 
+                Každá z těchto metod se zaměřuje na jiný aspekt učení, ale všechny mají společný cíl – pomoci studentům lépe se učit a zapamatovat si informace. Tyto metody lze použít nejen v akademickém prostředí, ale také v podnikání, sportu nebo osobním rozvoji. 
+                Pokud hledáte způsob, jak zlepšit své učení, může být vhodné vyzkoušet některou z těchto metod.
+            </p>
+        </section>
+
+
         
+        <main class="page__content">
+            <div class="slider">
+                <!-- slider content -->
+                <div class="swiper">
+                    <div class="slider__content swiper-wrapper">
+                            <div class="slider__item swiper-slide">
+                                <div class="slider-view slider-view__front" style="background-image: linear-gradient(to right bottom, rgb(43,43,43), rgba(43,43,43,0.5)), url(./assets/images/vyjezdy.jpg);">
+                                    <div class="slider-view__description">
+                                        <span>Pomodor technique</span>
+                                        <p class="description__text">Pomodoro technika je metoda časového řízení práce. Pracovní doba je rozdělena na krátké úseky, nazývané "pomodoros". Každý pomodoro trvá 25 minut. Během každého pomodora se zaměřujete pouze na jednu úlohu. Po každém pomodoru si uděláte krátkou přestávku.</p>
+                                        <button class="read-more">Read more</button>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__item swiper-slide">
+                                <div class="slider-view slider-view__front" style="background-image: linear-gradient(to right bottom, rgb(43,43,43), rgba(43,43,43,0.5)), url(./assets/images/prednasky.jpg);">
+                                    <div class="slider-view__description">
+                                        <span>Feynman Technique</span>
+                                        <p class="description__text">Feynman Technique je způsob učení se nových konceptů. Zahrnuje 4 kroky: zvolení tématu, vysvětlení tématu vlastními slovy, odhalení nedostatků v pochopení a zopakování procesu. Tento postup umožňuje efektivnější učení a zapamatování nových informací.</p>
+                                        <button class="read-more">Read more</button>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__item swiper-slide">
+                                <div class="slider-view slider-view__front" style="background-image: linear-gradient(to right bottom, rgb(43,43,43), rgba(43,43,43,0.5)), url(./assets/images/laborator.jpg);">
+                                    <div class="slider-view__description">
+                                        <span>Leitner system</span>
+                                        <p class="description__text">Leitner System je metoda opakování slovíček nebo pojmů. Slovník je rozdělen do několika krabic podle obtížnosti. Slova jsou učena postupně a podle úspěšnosti se přesouvají mezi krabicemi. Čím lépe si student pamatuje slova, tím méně jsou opakována. Tato metoda usnadňuje učení a zapamatování slovní zásoby.</p>
+                                        <button class="read-more">Read more</button>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__item swiper-slide">
+                                <div class="slider-view slider-view__front" style="background-image: linear-gradient(to right bottom, rgb(43,43,43), rgba(43,43,43,0.5)), url(./assets/images/laborator.jpg);">
+                                    <div class="slider-view__description">
+                                        <span>Reward-Based learning</span>
+                                        <p class="description__text">Reward-Based Learning odměňuje správné chování. Studenti jsou motivováni k učení pomocí pozitivní zpětné vazby. Metoda vychází z principů behaviorální psychologie.</p>
+                                        <span>Blurting</span>
+                                        <p class="description__text">Blurting je technika opakování informací pro studenty. Cílem je zlepšit dlouhodobou paměť a soustředění. </p>
+                                        <button class="read-more">Read more</button>    
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                        <div class="swiper-pagination"></div> <!-- puntíky -->
+                        <div class="swiper-button-prev"></div> <!-- šipka vlevo -->
+                        <div class="swiper-button-next"></div> <!-- šipka vpravo -->
+                        <div class="swiper-scrollbar"></div> <!-- "neviditelný" posuvník -->
+                </div>
+            </div>
+        </main>
+
+
+
+
+
     </main>
     <footer>
         <nav>

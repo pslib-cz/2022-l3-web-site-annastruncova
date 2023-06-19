@@ -1,0 +1,203 @@
+@layer reset, components, page, override;
+@import url(style.css);
+@import url(normalize.css) layer(reset);
+@import url(components.css) layer(components);
+@import url(https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css) layer(components);
+
+@layer page {
+  :root {
+    --light: #ffffff;
+    --dark: #000000;
+    --primary:#FF00A7;
+    --border: #ffffff;
+    --initial-clip-path: 0%;
+    --swiper-theme-color: var(--primary);
+    --swiper-pagination-bullet-size: 1em;
+    --swiper-pagination-bullet-inactive-color: #ffffff;
+    --swiper-pagination-bullet-inactive-opacity: 0.5;
+    --swiper-pagination-progressbar-bg-color: #FF00A7;
+  }
+  html {
+    font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  /* Layout */
+  .page {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Slider */
+  .slider {
+    position: relative;
+    text-align: center;
+  }
+  .slider__title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: 3em 1em 0 1em;
+    pointer-events: none;
+  }
+  #slide-counter {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+  .slider__item {
+    z-index: 0;
+    min-height: 400px;
+    /* overflow: hidden; */
+    /* display: none; */
+
+  }
+  .slider-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider-view__front {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: inherit;
+    pointer-events: none;
+  }
+  .slider-view__description{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 4rem;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .slider-view__description span{
+    user-select: none;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--light);
+    font-family: GoboldRegular;
+  }
+  .description__text{
+    text-align: left;
+  }
+  .slider-view__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    overflow: hidden;
+    background-color: var(--black);
+    clip-path: polygon(0 0, var(--initial-clip-path, 100%) 0, var(--initial-clip-path, 100%) 100%, 0 100%);
+  }
+  .slider-view__back > .slider-view__description {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    box-sizing: border-box;
+    transform: translate(0,-50%);
+    display: block;
+    color: var(--light);
+  }
+
+  /* Controls */
+  .controls__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1em;
+  }
+  .controls__dots > li {
+    
+  }
+  .dot {
+    padding: 0;
+    display: inline-block;
+    width: var(--swiper-pagination-bullet-size, 1em);
+    height: var(--swiper-pagination-bullet-size, 1em);
+    border: 3px solid var(--swiper-theme-color, --primary);
+    background-color: unset;
+    border-radius: 50%;
+  }
+  .dot:hover {
+    background-color: var(--primary);
+  }
+}
+
+.heading {
+    font-weight: bold;
+  }
+  .heading--large {
+    font-size: calc(1em + 1vw);
+  }
+  .slider__heading {
+    font-size: calc(1em + 0.25vw);
+    color: var(--light);
+  }
+  .slider__controls {
+    margin-top: .5em;
+  }
+  figure, p, menu {
+    margin: 0;
+    padding: 0;
+  }
+  .img-responsive {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  menu > li {
+    list-style-type: none;
+  }
+  
+  /* button */
+  .btn {
+    display: inline-block;
+    padding: 1em 2em;
+    text-decoration: none;
+    background-color: var(--primary);
+    color: var(--light);
+    border: none;
+    border-radius: 2em;
+  }
+  .btn--thin {
+    padding: 0.75em 1.25em;
+    font-size: 0.9em;
+  }
+  .btn:hover {
+    text-decoration: underline;
+    border: 1px solid currentColor;
+    color: var(--primary);
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .color--primary {
+    color: var(--primary);
+  }
+  
+  /* page */
+  .page__header {
+    text-align: center;
+    padding: 2em;
+  }
+  .page__logo {
+    display: inline-block;
+  }
+  .page__logo > span {
+    display: none;
+  }
+  .page__logo::before {
+    content: "";
+    display: block;
+    background-image: url(../images/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 16em;
+    height: 2.5em;
+  }
