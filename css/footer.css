@@ -47,10 +47,11 @@ figure{
     color: var(--primary);
     background-color: var(--black);
 }
-.face p{
+.face a{
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+    color: var(--primary);
 }
 .back{
     overflow: hidden;

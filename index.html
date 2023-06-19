@@ -37,7 +37,7 @@
         document.querySelector("#next-slide").onclick = () => swiper.slideNext();
       </script>
 </head>
-<body>
+<body class="body__uvod">
     <header>
         <div class="hamburger-row">
             <a href="./index.html" class=""><img class="mobil-logo" src="./img/Logo.svg" alt="study methods"></a>
@@ -59,25 +59,28 @@
             </menu>
         </nav>
     </header>
-    <main class="main__uvod">
-        <section>
+    <main>
+        <section class="uvod__caption">
             <h1>Samostudium</h1>
-            <p>
-                Existuje mnoho různých metod učení, které mohou pomoci studentům zlepšit své učební výsledky a efektivitu. Mezi ně patří například Pomodoro technika, Feynman Technique a další. 
-                Každá z těchto metod se zaměřuje na jiný aspekt učení, ale všechny mají společný cíl – pomoci studentům lépe se učit a zapamatovat si informace. Tyto metody lze použít nejen v akademickém prostředí, ale také v podnikání, sportu nebo osobním rozvoji. 
-                Pokud hledáte způsob, jak zlepšit své učení, může být vhodné vyzkoušet některou z těchto metod.
-            </p>
+            <div class="caption__text">
+                <img class="text__img" src="./img/img/uvod-samostudium.png" alt="samostudium">
+                <p>
+                    Existuje mnoho různých metod učení, které mohou pomoci studentům zlepšit své učební výsledky a efektivitu. Mezi ně patří například Pomodoro technika, Feynman Technique a další.
+                    Každá z těchto metod se zaměřuje na jiný aspekt učení, ale všechny mají společný cíl – pomoci studentům lépe se učit a zapamatovat si informace. Tyto metody lze použít nejen v akademickém prostředí, ale také v podnikání, sportu nebo osobním rozvoji.
+                    Pokud hledáte způsob, jak zlepšit své učení, může být vhodné vyzkoušet některou z těchto metod.
+                </p>
+            </div>
         </section>
 
 
         
-        <main class="page__content">
+        <div class="page__content">
             <div class="slider">
                 <!-- slider content -->
                 <div class="swiper">
                     <div class="slider__content swiper-wrapper">
-                            <div class="slider__item swiper-slide">
-                                <div class="slider-view slider-view__front" style="background-image: linear-gradient(to right bottom, rgb(43,43,43), rgba(43,43,43,0.5)), url(./assets/images/vyjezdy.jpg);">
+                            <div class="slider__item swiper-slide  background-pomodoro">
+                                <div class="slider-view slider-view__front">
                                     <div class="slider-view__description">
                                         <span>Pomodor technique</span>
                                         <p class="description__text">Pomodoro technika je metoda časového řízení práce. Pracovní doba je rozdělena na krátké úseky, nazývané "pomodoros". Každý pomodoro trvá 25 minut. Během každého pomodora se zaměřujete pouze na jednu úlohu. Po každém pomodoru si uděláte krátkou přestávku.</p>
@@ -86,7 +89,7 @@
                                 </div>
                             </div>
                             <div class="slider__item swiper-slide">
-                                <div class="slider-view slider-view__front" style="background-image: linear-gradient(to right bottom, rgb(43,43,43), rgba(43,43,43,0.5)), url(./assets/images/prednasky.jpg);">
+                                <div class="slider-view slider-view__front background-feynman">
                                     <div class="slider-view__description">
                                         <span>Feynman Technique</span>
                                         <p class="description__text">Feynman Technique je způsob učení se nových konceptů. Zahrnuje 4 kroky: zvolení tématu, vysvětlení tématu vlastními slovy, odhalení nedostatků v pochopení a zopakování procesu. Tento postup umožňuje efektivnější učení a zapamatování nových informací.</p>
@@ -95,7 +98,7 @@
                                 </div>
                             </div>
                             <div class="slider__item swiper-slide">
-                                <div class="slider-view slider-view__front" style="background-image: linear-gradient(to right bottom, rgb(43,43,43), rgba(43,43,43,0.5)), url(./assets/images/laborator.jpg);">
+                                <div class="slider-view slider-view__front background-leitner">
                                     <div class="slider-view__description">
                                         <span>Leitner system</span>
                                         <p class="description__text">Leitner System je metoda opakování slovíček nebo pojmů. Slovník je rozdělen do několika krabic podle obtížnosti. Slova jsou učena postupně a podle úspěšnosti se přesouvají mezi krabicemi. Čím lépe si student pamatuje slova, tím méně jsou opakována. Tato metoda usnadňuje učení a zapamatování slovní zásoby.</p>
@@ -104,7 +107,7 @@
                                 </div>
                             </div>
                             <div class="slider__item swiper-slide">
-                                <div class="slider-view slider-view__front" style="background-image: linear-gradient(to right bottom, rgb(43,43,43), rgba(43,43,43,0.5)), url(./assets/images/laborator.jpg);">
+                                <div class="slider-view slider-view__front background-ostatni">
                                     <div class="slider-view__description">
                                         <span>Reward-Based learning</span>
                                         <p class="description__text">Reward-Based Learning odměňuje správné chování. Studenti jsou motivováni k učení pomocí pozitivní zpětné vazby. Metoda vychází z principů behaviorální psychologie.</p>
@@ -121,7 +124,7 @@
                         <div class="swiper-scrollbar"></div> <!-- "neviditelný" posuvník -->
                 </div>
             </div>
-        </main>
+        </div>
 
 
 
@@ -132,7 +135,7 @@
         <nav>
             <menu class="footer__cards">
                 <figure class="card-item item-1">
-                    <div class="face"><p>@_.handele</p></div>
+                    <div class="face"><a href="#">@_.handele</a></div>
                     <div class="back"><img src="./img/icon/icony=instagram.svg"></div>
                 </figure>
                 <div class="background__img-1 card-item item-2"></div>
@@ -140,7 +143,7 @@
                 <div class="background card-item item-4" ></div>
                 <div class="card-item background-2 item-5" onclick="window.location.href='pomodoro.html'" style="cursor: pointer;"><p>Pomodoro technique</p></div>
                 <figure class="card-item item-6">
-                    <div class="face"><p>Anna Struncová</p></div>
+                    <div class="face"><a href="#">Anna Struncová</a></div>
                     <div class="back"><img src="./img/icon/icony=facebook.svg"></div>
                 </figure>
                 <div class="card-item background-3 item-7" onclick="window.location.href='ostatni.html'" style="cursor: pointer;"><p>Ostatní</p></div>
@@ -149,17 +152,17 @@
                 <div class="background__img-4 card-item item-10"></div>
                 <div class="card-item background-4 item-11" onclick="window.location.href='feynman.html'" style="cursor: pointer;"><p>Feynman Technique</p></div>
                 <figure class="card-item item-12">
-                    <div class="face"><p>+420 111 222 444</p></div>
+                    <div class="face"><a href="tel:+420111222444">+420 111 222 444</a></div>
                     <div class="back"><img src="./img/icon/icony=phone.svg"></div>
                 </figure>
                 <div class="card-item background-5 item-13"  onclick="window.location.href='index.html'" style="cursor: pointer;"><p>Study methods</p></div>
                 <figure class="card-item item-14">
-                    <div class="face"><p>anna.struncova. 020@pslib.cz</p></div>
+                    <div class="face"><a href="mailto:anna.struncova.020@pslib.cz">anna.struncova. 020@pslib.cz</a></div>
                     <div class="back"><img src="./img/icon/icony=mail.svg"></div>
                 </figure>
                 <div class="background__img-5 card-item item-15"></div>
                 <figure class="card-item item-16">
-                    <div class="face"><p>@annastruncova</p></div>
+                    <div class="face"><a href="https://pin.it/1Ix8CmO">@annastruncova</a></div>
                     <div class="back"><img src="./img/icon/icony=pinterest.svg"></div>
                 </figure>
                 <div class="background__img-6 card-item item-17"></div>

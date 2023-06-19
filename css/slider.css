@@ -32,6 +32,7 @@
   .slider {
     position: relative;
     text-align: center;
+    margin: 1rem auto;
   }
   .slider__title {
     position: absolute;
@@ -40,7 +41,6 @@
     right: 0;
     z-index: 1;
     padding: 3em 1em 0 1em;
-    pointer-events: none;
   }
   #slide-counter {
     display: block;
@@ -64,7 +64,6 @@
     background-size: cover;
     background-position: center;
     min-height: inherit;
-    pointer-events: none;
   }
   .slider-view__description{
     display: flex;
@@ -75,7 +74,7 @@
   }
   .slider-view__description span{
     user-select: none;
-    font-size: 2em;
+    font-size: 1em;
     font-weight: bold;
     color: var(--light);
     font-family: GoboldRegular;
