@@ -102,7 +102,14 @@ h2{font-size: 22px}
 }
 
 
-
+/*pomodoro*/
+.header__pomodoro{
+    background: url(../img/img/ostatni-background.png);
+    background-position: center 45%;
+    background-repeat: no-repeat;
+    text-align: end;
+    padding: 1rem;
+}
 
 
 
@@ -116,7 +123,6 @@ h2{font-size: 22px}
     background-repeat: no-repeat;
     text-align: end;
     padding: 1rem;
-    margin: 0 -1rem;
 }
 .img__feynman{
     display: inline-block;
@@ -129,7 +135,39 @@ h2{font-size: 22px}
   align-items: center;
 }
 
+/*ostatní*/
+.header__RB-learning{
+    background: url(../img/img/ostatni-background.png);
+    background-position: center 45%;
+    background-repeat: no-repeat;
+    text-align: end;
+    padding: 1rem;
+}
+.header__blurting{
+    background: url(../img/img/Feynman-background.png);
+    background-position: center 45%;
+    background-repeat: no-repeat;
+    text-align: end;
+    padding: 1rem;
+}
 
+
+
+/*kontakt*/
+.section__kontakt{
+    background-color: var(--primary);
+    padding: 1rem;
+    border-radius: 50px 0px;
+}
+.kontakt__icon{
+    width: 4rem;
+    height: 4rem;
+}
+.kontakt__info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 
 @media screen and (min-width: 450px) {
